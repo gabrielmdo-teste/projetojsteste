@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comentários</title>
+    
+</head>
+<body>
+
+       
+    <div id="container">
+        
+        <div id="postagem">
+            <h2>Titulo do Post</h2>
+            <br>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <br>
+            <script>
+                data = new Date();
+                document.write(data);
+                var contadorComentarios = 1;
+                var respostaContador = 1;
+            </script>
+
+
+            <div id="comentario">
+                <h2>Quer comentar? </h2>
+                <br>
+                <h2>Qual seu nome?</h2>
+                <input id="nomeUsuario" type="text">
+                <br>
+                <h2>Insira uma foto: </h2>
+                <input type="file" id="imagemUsuario">
+                <br>
+                <h2>Digite seu comentário: </h2>
+                <br>
+                <textarea id="comentarioDigitado" cols="30" rows="10"></textarea>
+                <br>
+                <input type="button" value="Enviar" id="enviarComentario" >
+            </div>
+
+
+            <h3>Comentário ficará aqui: </h3>
+
+            <div id="apendiceComentario"></div>
+
+            <h4>Responda o comentário: </h4>
+
+           
+
+        </div>
+        
+        <br>
+    
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
